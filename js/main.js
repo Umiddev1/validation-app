@@ -9,9 +9,6 @@ let elSpanLastName = document.querySelector('.span-lname');
 let elSpanEmail = document.querySelector('.span-email');
 let elSpanPassOne = document.querySelector('.span-passone');
 let elSpanPassTwo = document.querySelector('.span-passtwo');
-let elUzunlik = document.querySelector('.uzunlik');
-let elSpnCode = document.querySelector('.spn-code');
-
 
 elForm.addEventListener("submit", output);
 function output(e) {
@@ -25,6 +22,10 @@ function compare() {
     elSpanFirstName.innerHTML = `Ismni kiriting...`
     elInpFirstName.style.borderColor = "red"
   }
+  else if(pass !== pass1) {
+    elSpanFirstName.innerHTML = `Ismni kiriting...`
+    elInpFirstName.style.borderColor = "red"
+  }
   else {
     elInpFirstName.value = ""
     elInpFirstName.style.borderColor = "green"
@@ -32,6 +33,9 @@ function compare() {
   if(elInpLastName.value === "") {
     elSpanLastName.innerHTML = `Familya kiriting...`
     elInpLastName.style.borderColor = "red" 
+  }
+  else if(pass !== pass1) {
+    elSpanLastName.innerHTML = `Familya kiriting...`
   }
   else {
     elInpLastName.value = ""
@@ -41,6 +45,9 @@ function compare() {
     elSpanEmail.innerHTML = `Email kiriting...`
     elInpEmail.style.borderColor = "red" 
   }
+  else if(pass !== pass1) {
+    elSpanEmail.innerHTML = `Email kiriting...`
+  }
   else {
     elInpEmail.value = ""
     elInpEmail.style.borderColor = "green"
@@ -49,12 +56,15 @@ function compare() {
     elSpanPassOne.innerHTML = `Parol...`
     elInpPassOne.style.borderColor = "red" 
   }
+  else if (pass !== pass1) {
+    elSpanPassOne.innerHTML = `Parol...`
+  }
   else {
     elInpPassOne.value = ""
     elInpPassOne.style.borderColor = "green"
   }
   if(pass1 === "") {
-    elSpanPassTwo.innerHTML = "tasdiqlang"
+    elSpanPassTwo.innerHTML = 'notogri...'
     elInpPassTwo.style.borderColor = "red"
   }
   else if(pass !== pass1) {
