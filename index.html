@@ -9,7 +9,38 @@
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-
+    <div class="container">
+      <form class="forms">
+        <div class="inp-group">
+          <label class="forms-label" for="fname">FirstName</label>
+          <input class="inp firstname" type="text" placeholder="FirstName" name="firstname"  id="fname">
+          <span class="spn span-name"></span>
+        </div>
+        <div class="inp-group">
+          <label class="forms-label" for="lname">LastName</label>
+          <input class="inp lastname" type="text" placeholder="LastName" id="lname" name="lastname" maxlength="20">
+          <span class="spn span-lname"></span> 
+        </div>
+        <div class="inp-group">
+          <label class="forms-label" for="email">Email</label>
+          <input class="inp email" type="email" placeholder="Email" name="email" id="email">
+          <span class="spn span-email"></span>
+        </div>
+          <div class="inp-group">
+            <label class="forms-label" for="password">Password</label>
+            <input class="inp pass-one" type="password" name="pass" placeholder="password" id="password">
+            <span class="spn span-passone"></span> <span class="spn uzunlik"></span>
+          </div>
+          <div class="inp-group">
+            <label class="forms-label" for="passwor">Password</label>
+            <input class="inp pass-two" type="password" name="passwordd" placeholder="submit" id="passwor">
+            <span class="spn span-passtwo"></span> <span class="spn spn-code"></span>
+          </div>
+          <div>
+            <button class="btn" type="submit">Click</button>
+          </div>      
+      </form>
+    </div>
   <script src="js/main.js"></script>
 </body>
 </html>
