@@ -7,11 +7,12 @@ let elInpPassTwo = document.querySelector('.pass-two');
 let elSpanFirstName = document.querySelector('.span-name');
 let elSpanLastName = document.querySelector('.span-lname');
 let elSpanEmail = document.querySelector('.span-email');
-// let elInp = document.querySelectorAll('.inp');
 let elSpanPassOne = document.querySelector('.span-passone');
 let elSpanPassTwo = document.querySelector('.span-passtwo');
 let elUzunlik = document.querySelector('.uzunlik');
 let elSpnCode = document.querySelector('.spn-code');
+
+
 elForm.addEventListener("submit", output);
 function output(e) {
   e.preventDefault()
